@@ -1,0 +1,47 @@
+.grid {
+  position: relative;
+
+  &__fallback {
+    @include mq($from: gel-bp-l) {
+      position: absolute;
+    }
+  }
+}
+
+.grid__item {
+  & + & { // [1]
+    margin-top: triple($gel-spacing-unit);
+  }
+
+  & + &#{&}--categorycard { // [2]
+    margin-top: $gel-spacing-unit;
+  }
+
+  @include mq($from: gel-bp-m) {
+    & + &#{&}--categorycard {
+      margin-top: double($gel-spacing-unit);
+    }
+  }
+}
+
+.grid__item {
+  @include mq($from: gel-bp-xs) {
+    &:first-child + & {
+      margin-top: 0;
+    }
+  }
+
+  @include mq($from: gel-bp-m) {
+    &:first-child + & + & {
+      margin-top: 0;
+    }
+  }
+
+  @include mq($from: gel-bp-l) {
+    &:first-child + & + & + &,
+    &:first-child + & + & + & + &,
+    &:first-child + & + & + & + & + & {
+      margin-top: 0;
+    }
+  }
+}

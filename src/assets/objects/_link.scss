@@ -1,0 +1,45 @@
+.link {
+  color: $color-link-text;
+
+  &--active {
+    color: $color-link-text-hover;
+  }
+  
+  .link__text {
+    color: $color-link-text;
+    -webkit-transition-property: color .35s ease;
+    transition: color .35s ease;
+  }
+
+  &--white {
+    .link__text {
+      color: $color-link-white-text;
+    }
+  }
+
+  &:hover {
+    .link__text {
+      color: $color-link-text-hover;
+    }
+
+    .responsive-image__overlay {
+      background-color: rgba(100, 100, 100, 0.85);
+    }
+
+    .responsive-image__svg {
+      opacity: 1;
+    }
+  }
+
+  &--light {
+    .link__text {
+      color: $color-link-light-text;
+    }
+
+    &:hover {
+      .link__text {
+        color: $color-link-text-hover;
+      }
+    }
+  }
+}

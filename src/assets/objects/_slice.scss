@@ -1,0 +1,27 @@
+.o-slice-spacing {
+    margin-top: 32px!important
+}
+
+@media (min-width: 37.5em) {
+    .o-slice-spacing {
+        margin-top:64px!important
+    }
+}
+
+.o-slice-spacing-bottom {
+    margin-bottom: 32px!important
+}
+
+@media (min-width: 37.5em) {
+    .o-slice-spacing-bottom {
+        margin-bottom:64px!important
+    }
+}
+
+.o-slice-block {
+    min-height: 341px;
+    
+    &--full {
+        min-height: calc(100% - 69px);
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "environment": "production",
+  "aws": {
+    "bucket": "production.coderoyale.com"
+  },
+  "root": "/opt/coderoyale/",
+  "clustering": "on",
+  "sportsradar": {
+    "accessLevel": "production",
+    "apiKey": "c9p5yd8y57n2btmapagwwjcc"
+  }
+}

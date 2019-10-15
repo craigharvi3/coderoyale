@@ -1,0 +1,41 @@
+.button {
+  background: $color-button-background;
+  color: $color-button-text;
+  border: none;
+  cursor: pointer;
+  -webkit-transition-property: background-color .35s ease;
+  transition: background-color .35s ease;
+
+  &[disabled] {
+    background-color: rgba(243, 146, 27, 0.4);
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: rgba(243, 146, 27, 0.4);
+    }
+  }
+
+  &:hover {
+    background: $color-button-background-hover;
+  }
+
+  &--fixed {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &--white {
+    background: $color-button-white-background;
+    color: $color-button-white-text;
+  }
+
+  &--transparent {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: 1px solid transparent !important;
+  }
+}

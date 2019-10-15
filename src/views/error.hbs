@@ -1,0 +1,39 @@
+<html lang="en" class="b-pw-1280">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
+    <link rel="icon" href="/assets/img/fav.ico" type="image/x-icon" />
+
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/app.css" />
+  </head>
+
+  <body>
+    <body class="antialiased gs-u-box-size">
+      <div class="hero hero--full-page gs-u-align-center">
+        <div class="gel-20/24 gel-2/3@m gel-1/2@l gs-u-mt++ gs-u-display-inline-block gs-u-display-block@l">
+          <div
+            class="hero__content gs-u-p++ gel-1/1 gel-18/24@l gs-u-float-right@l o-slice-spacing o-slice-spacing-bottom gs-u-align-left">
+            <header class="header header--no-border gs-u-mb+">
+              <a href="/" class="header__logo gs-u-display-inline-block gel-double-pica-bold">
+                <img class="logo header__img gs-u-float-left gs-u-mr" src="/assets/img/logo.png" alt="" />
+                Podcast<span class="header__link_alt">Snippets</span>
+              </a>
+            </header>
+            <h2 class="module-title gel-double-pica gs-u-mt gs-u-mb+">{{title}}</h2>
+            {{#if message}}
+            <div class="error-block gs-u-p gs-u-mb+">
+              <p>{{{message}}}</p>
+            </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+  
+</html>

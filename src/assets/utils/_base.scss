@@ -1,0 +1,36 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: $color-body-text;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+
+
+// PLAYER
+
+.flex {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.flex-column {
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.flex-center {
+    -ms-flex-align: center;
+    align-items: center
+}

@@ -1,0 +1,36 @@
+input[type=text] {
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit]
+{
+  padding: $gel-spacing-unit * 2;
+  border-bottom: 1px solid #545454;
+}
+
+input {
+  border: none;
+}
+
+input[type=range] {
+  vertical-align: middle;
+  background-color: #545454;
+  margin-top: 7px;
+}
+
+.form-element {
+  position: relative;
+}
+
+.form-error {
+  position: absolute;
+  color: $color-form-error-text;
+}
+
+.error-block {
+  background: #ff2626;
+  color: white;
+}

@@ -1,0 +1,13 @@
+coderoyale.com {
+  gzip
+  proxy / localhost:8080 {
+    header_upstream Host {host}
+    header_upstream X-Real-IP {remote}
+    header_upstream X-Forwarded-For {remote}
+    header_upstream X-Forwarded-Port {server_port}
+    header_upstream X-Forwarded-Proto {scheme}
+  }
+}
+www.coderoyale.com {
+  redir https://coderoyale.com{uri}
+}

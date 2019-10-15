@@ -1,0 +1,35 @@
+env:
+  browser: true
+  es6: true
+  mocha: true
+extends:
+  - airbnb
+  - prettier
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - import
+  - jsx-a11y
+  - mocha
+  - prettier
+  - react
+rules:
+  prettier/prettier: error
+  mocha/no-exclusive-tests: error
+  import/prefer-default-export: off
+  consistent-return: off
+  class-methods-use-this: off
+  react/forbid-prop-types: off
+  import/no-named-as-default: off
+  global-require: off
+overrides:
+  files:
+    - '*.test.{js,jsx}'
+  rules:
+    no-unused-expressions: off

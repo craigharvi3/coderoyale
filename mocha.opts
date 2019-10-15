@@ -1,0 +1,5 @@
+--require test/setup.js
+--require @babel/register
+--require @babel/polyfill
+--exit
+test/**/*.test.{js,jsx}

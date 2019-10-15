@@ -1,0 +1,9 @@
+User-agent: *
+Sitemap: https://coderoyale.com/sitemap.xml
+Allow: /
+Allow: /play/*
+Allow: /podcast/*
+Allow: /signin
+Allow: /register
+Disallow: /me
+Disallow: /logout

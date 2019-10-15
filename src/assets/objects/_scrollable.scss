@@ -1,0 +1,18 @@
+.scrollable {
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+
+	.scrollable__list {
+		white-space: nowrap;
+
+		li {
+			display: inline-block;
+			white-space: normal;
+		}
+	}
+}

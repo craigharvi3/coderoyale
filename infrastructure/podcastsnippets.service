@@ -1,0 +1,13 @@
+[Unit]
+Description=coderoyale
+
+[Service]
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=coderoyale
+ExecStart=/usr/bin/node /opt/coderoyale/dist/app/server.js
+Environment=NODE_ENV=production NODE_CONFIG_DIR=/opt/coderoyale/config
+
+[Install]
+WantedBy=multi-user.target
